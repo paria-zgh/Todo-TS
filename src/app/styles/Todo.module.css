@@ -1,0 +1,85 @@
+/* src/styles/Todo.module.css */
+
+.container {
+  text-align: center; 
+    max-width: 500px;
+    margin: 10rem auto;
+    padding: 3rem;
+    background-color: #a9d4cebd;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+  .inputGroup {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+  }
+  
+  .inputGroup input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #5c5353;
+    border-radius: 8px;
+    
+  }
+  
+  .inputGroup button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .inputGroup button:hover {
+    background-color: #0059c1;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .item input {
+    flex: 1;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .deleteBtn {
+    background-color: #ff6b6b !important;
+    color: white;
+    
+  }
+  
+  .deleteBtn:hover {
+    background-color: #d9534f !important;
+  }
+  .item button {
+    margin-right: 1rem;
+    border: none;
+    background-color: #ffd43b;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    
+  }
+  

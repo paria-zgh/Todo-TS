@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from "react";
 import styles from "./styles/Todo.module.css";
 type TodoItem={
@@ -12,13 +11,11 @@ const Todo=()=>{
     const[editText,setEditText]=useState('');
     const[editIndex,setEditIndex]=useState<number|null>(null);
     const [toggleBtn,setToggleBtn]=useState<string>('');
-const handleToggleDone = (index: number) => {
-  const updatedTodos = [...todo]
+    const handleToggleDone = (index: number) => {
+    const updatedTodos = [...todo]
   updatedTodos[index].completed = !updatedTodos[index].completed
   setTodo(updatedTodos)
 }
-
-
     const deleteBtn=(index:number)=>{
       const del=todo.filter((_,i)=>i!==index)
       setTodo(del);

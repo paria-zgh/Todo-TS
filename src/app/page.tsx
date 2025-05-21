@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles/Todo.module.css";
 type TodoItem={
   text:string,
@@ -46,6 +46,15 @@ const Todo=()=>{
        setNewTodo("")
         
     }
+    useEffect(()=>{
+      const storedTodos=localStorage.getItem("todos");
+      if(storedTodos){
+        setTodo(JSON.parse(storedTodos))
+      }
+    },[])
+    useEffect(() => {
+      localStorage.setItem("todos",JSON.stringify(todo))
+    }, [todo])
 return(
 
     <div className={styles.container}>
